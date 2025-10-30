@@ -21,17 +21,6 @@ public class Treino {
     @Column(name = "treino_do_buddy")
     private int treinoDoBuddy;
 
-    @OneToMany(mappedBy = "treinoDoBuddy")
-    private List<TreinosSalvos> treinosSalvos;
-
-    public List<TreinosSalvos> getTreinosSalvos() {
-        return treinosSalvos;
-    }
-
-    public void setTreinosSalvos(List<TreinosSalvos> treinosSalvos) {
-        this.treinosSalvos = treinosSalvos;
-    }
-
     public Integer getId() {
         return id;
     }

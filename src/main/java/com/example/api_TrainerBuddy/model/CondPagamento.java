@@ -18,7 +18,7 @@ public class CondPagamento {
 
     @ManyToOne
     @JoinColumn(name = "id_plano", nullable = false)
-    private int plano;
+    private Plano plano;
 
     @Column(name = "data_validade", nullable = false, length = 45)
     private String dataValidade;
@@ -50,11 +50,11 @@ public class CondPagamento {
         this.nome = nome;
     }
 
-    public int getPlano() {
+    public Plano getPlano() {
         return plano;
     }
 
-    public void setPlano(int plano) {
+    public void setPlano(Plano plano) {
         this.plano = plano;
     }
 

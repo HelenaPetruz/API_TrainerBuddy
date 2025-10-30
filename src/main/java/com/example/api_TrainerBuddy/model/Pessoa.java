@@ -35,23 +35,12 @@ public class Pessoa {
     @OneToMany(mappedBy = "usuario")
     private List<Faturamento> faturamentos;
 
-    @OneToMany(mappedBy = "usuario")
-    private List<TreinosSalvos> treinosSalvos;
-
     public List<Faturamento> getFaturamentos() {
         return faturamentos;
     }
 
     public void setFaturamentos(List<Faturamento> faturamentos) {
         this.faturamentos = faturamentos;
-    }
-
-    public List<TreinosSalvos> getTreinosSalvos() {
-        return treinosSalvos;
-    }
-
-    public void setTreinosSalvos(List<TreinosSalvos> treinosSalvos) {
-        this.treinosSalvos = treinosSalvos;
     }
 
     public Integer getId() {
